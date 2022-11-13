@@ -53,6 +53,33 @@ min-width: 100vh;
         margin: 0px 20px;
     }
 }
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div
+{
+    display: blox;
+    background: #567572;
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.move .line2{
+    opacity: 0;
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
 .kaltert
 {
 color: #567572;
@@ -184,6 +211,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30%;
 }
 .skilltxt h2
 {
@@ -196,6 +224,7 @@ section{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
+    padding-bottom: 10%;
 }
 .skill-name
 {
